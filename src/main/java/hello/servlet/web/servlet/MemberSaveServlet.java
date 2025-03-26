@@ -35,14 +35,16 @@ public class MemberSaveServlet extends HttpServlet {
                 "<html>\n" +
                 "<head>\n" +
                 "    <meta charset=\"UTF-8\">\n" +
-                "    <title>Title</title>\n" +
                 "</head>\n" +
                 "<body>\n" +
-                "<form action=\"/servlet/members/new-form\" method=\"get\">\n" +
-                "    username: <input type=\"text\" name=\"username\" />\n" +
-                "    age:      <input type=\"text\" name=\"age\" />\n" +
-                "</form>\n" +
+                "성공\n" +
+                "<ul>\n" +
+                "    <li>id=" +member.getId() + "</li>\n" +
+                "    <li>username=" +member.getUsername() + "</li>\n" +
+                "    <li>age=" +member.getAge() + "</li>\n" +
+                "</ul>\n" +
+                "<a href=\"/index.html\">메인</a>\n" +
                 "</body>\n" +
-                "</html>\n");
+                "</html>");
     }
 }
