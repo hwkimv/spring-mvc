@@ -39,6 +39,10 @@ public class MemberSaveServlet extends HttpServlet {
                 "</head>\n" +
                 "<body>\n" +
                 "<form action=\"/servlet/members/new-form\" method=\"get\">\n" +
-                "    username: <input                                                                                                                                                                                                                        +
+                "    username: <input type=\"text\" name=\"username\" />\n" +
+                "    age:      <input type=\"text\" name=\"age\" />\n" +
+                "</form>\n" +
+                "</body>\n" +
+                "</html>\n");
     }
 }
