@@ -21,7 +21,7 @@ public class MemberRepository {
 
     }
 
-    public Member save(Member member) {
+    public static Member save(Member member) {
         member.setId(++sequence);
         store.put(member.getId(), member);
         return member;
@@ -31,7 +31,7 @@ public class MemberRepository {
         return store.get(memberId);
     }
 
-    public List<Member> findAll() {
+    public static List<Member> findAll() {
         return new ArrayList<>(store.values());
     }
 
