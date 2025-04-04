@@ -32,6 +32,4 @@ public class MyView {
     private void modelToRequestAttribute(Map<String, Object> model, HttpServletRequest request) {
         model.forEach(request::setAttribute); // model의 모든 값을 request에 담는다.
     }
-
-
 }
